@@ -1,0 +1,54 @@
+<!-- 
+justin bishop
+prog2056
+march 12, 2024
+assignment 3
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using OpenLayers with Vite</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <!-- logo -->
+  <img src="download.png">
+  <h1>My Excellent Donair Map</h1>
+  <div id="mainMap" class="map"></div>
+
+  <!-- Basemap radio buttons -->
+  <div>
+    <input type="radio" id="basemap1" name="basemap">
+    <label for="basemap1">Thunderforest Basemap</label>
+
+    <input type="radio" id="basemap2" name="basemap" checked>
+    <label for="basemap2">ArcGIS Basemap</label>
+
+    <!-- Checkboxes -->
+    <ul>
+
+      <input type="checkbox" id="toggleRestaurants" checked>
+      <label for="toggleRestaurants">Donairs</label>
+
+      <input type="checkbox" id="toggleArea" checked>
+      <label for="toggleArea">Optimal Donair Area</label>
+
+    </ul>
+  </div>
+
+  <div id="mouse-position"></div>
+
+  <script type="module" src="./main.js"></script>
+  <!-- copyright -->
+  <footer>
+    <p>Justin Bishop 2024 - NSCC COGS &#169;</p>
+  </footer>
+</body>
+
+</html>
